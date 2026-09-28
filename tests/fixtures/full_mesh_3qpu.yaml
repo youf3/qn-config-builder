@@ -1,0 +1,22 @@
+meta:
+  name: "test-3qpu"
+  description: "3-QPU full-mesh test"
+
+topology:
+  template: full-mesh
+
+nodes:
+  qpu:
+    count: 3
+    prefix: "QPU"
+    defaults:
+      qubits:
+        communication: 4
+        data: 2
+    overrides:
+      QPU-1:
+        qubits:
+          communication: 8
+
+server:
+  loglevel: "DEBUG"

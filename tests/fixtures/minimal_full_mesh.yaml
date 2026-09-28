@@ -1,0 +1,5 @@
+topology:
+  template: full-mesh
+nodes:
+  qpu:
+    count: 2
