@@ -87,6 +87,7 @@ def generate_compose(nodes: list[NodeSpec], descriptor: Descriptor) -> str:
             "-a", node.id,
             "-n", f"/opt/quantnet/node_defs/conf_{node.id}.json",
             "-c", "/opt/quantnet/etc/agent.cfg",
+            "--no-repl",
         ]
 
         if first_agent_key is None:

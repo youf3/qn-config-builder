@@ -112,6 +112,7 @@ def _generate_agent_compose(node: NodeSpec, descriptor: Descriptor) -> str:
                 "-a", node.id,
                 "-n", f"/opt/quantnet/node_defs/conf_{node.id}.json",
                 "-c", "/opt/quantnet/etc/agent.cfg",
+                "--no-repl",
             ],
             "environment": ["QUANTNET_HOME=/opt/quantnet"],
             "volumes": [
